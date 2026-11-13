@@ -375,6 +375,76 @@
   border-radius: 999px;
 }
 
+/* ============ Signature Footer toolkit — adaptasi desain muhdin.web.id (digiman.id) ============ */
+
+/* Hairline emas puncak footer yang mengalir pelan */
+.footer-divider-flow {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(201, 150, 43, 0.85) 18%,
+    #f2d492 50%,
+    rgba(201, 150, 43, 0.85) 82%,
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: divider-flow 9s linear infinite;
+}
+@keyframes divider-flow {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Watermark raksasa brand — huruf outline emas transparan */
+.footer-watermark {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(201, 150, 43, 0.11);
+  user-select: none;
+}
+
+/* Sapuan cahaya diagonal di panel signature (loop pelan) */
+@keyframes sig-sweep {
+  0% {
+    transform: translateX(-170%) skewX(-14deg);
+  }
+  55%,
+  100% {
+    transform: translateX(320%) skewX(-14deg);
+  }
+}
+.sig-sweep {
+  animation: sig-sweep 7.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Orbit dashed di logo digiman — berputar sangat pelan */
+@keyframes sig-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sig-orbit {
+  animation: sig-orbit 16s linear infinite;
+  transform-box: view-box;
+  transform-origin: 32px 32px;
+}
+
+/* Glow melayang lembut */
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-float-soft {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
 /* Reduced motion respect */
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
@@ -383,7 +453,11 @@
   .animate-floaty-late,
   .animate-spin-slower,
   .text-gold-gradient,
-  .thread-path {
+  .thread-path,
+  .footer-divider-flow,
+  .sig-sweep,
+  .sig-orbit,
+  .animate-float-soft {
     animation: none !important;
   }
   .thread-path {
