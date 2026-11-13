@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Reveal, SectionHeading, WaIcon, EASE_OUT } from "@/components/motion-primitives";
 import { PageHero } from "@/components/motion-primitives";
 import { CtaBanner } from "@/components/cta-banner";
-import { SITE, INSTAGRAM_HANDLE, waLink } from "@/lib/site";
+import { SITE, INSTAGRAM_HANDLE, PHONE_DISPLAY, waLink } from "@/lib/site";
 
 const ORDER_TYPES = [
   "Seragam Sekolah / Instansi",
@@ -105,7 +105,7 @@ export function KontakView() {
                       className="inline-flex items-center gap-3 font-semibold text-emerald transition-colors hover:text-gold-deep"
                     >
                       <WaIcon className="h-4.5 w-4.5" />
-                      WhatsApp — klik untuk chat
+                      WhatsApp — {PHONE_DISPLAY}
                     </a>
                     <span className="inline-flex items-center gap-3">
                       <Instagram className="h-4.5 w-4.5 text-emerald" aria-hidden="true" />
@@ -113,7 +113,7 @@ export function KontakView() {
                     </span>
                   </div>
                   <p className="mt-4 rounded-xl bg-cream-2 px-4 py-3 text-[11px] leading-relaxed text-ink-soft">
-                    Nomor telepon &amp; akun sosial media akan diperbarui oleh admin situs.
+                    Klik nomor WhatsApp di atas untuk mulai chat langsung dengan tim kami.
                   </p>
                 </div>
               </Reveal>

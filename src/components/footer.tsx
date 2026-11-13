@@ -2,7 +2,7 @@
 
 import { LogoMark } from "@/components/logo";
 import { PageLink } from "@/components/page-link";
-import { NAV_LINKS, PILLARS, SITE, waLink, DEFAULT_WA_MESSAGE } from "@/lib/site";
+import { NAV_LINKS, PILLARS, SITE, PHONE_DISPLAY, waLink, DEFAULT_WA_MESSAGE } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -75,7 +75,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="w-fit text-gold-2 transition-colors hover:text-gold-3"
               >
-                WhatsApp kami
+                WhatsApp — {PHONE_DISPLAY}
               </a>
               <a
                 href={SITE.mapsUrl}

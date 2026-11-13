@@ -5,9 +5,11 @@
 //  sengaja TIDAK dimuat di situs publik ini.
 // ============================================================
 
-// TODO: Ganti dengan nomor WhatsApp asli milik konveksi
-// (format internasional tanpa "+" — contoh: 62812xxxxxxxx)
-export const WHATSAPP_NUMBER = "6281234567890";
+// Nomor WhatsApp resmi (format internasional tanpa "+")
+export const WHATSAPP_NUMBER = "6281387685252";
+
+// Tampilan nomor telepon dengan format mudah dibaca
+export const PHONE_DISPLAY = "+62 813-8768-5252";
 
 // TODO: Ganti dengan akun Instagram asli
 export const INSTAGRAM_HANDLE = "@mulyakonveksi.tsm";
