@@ -1,36 +1,32 @@
 "use client";
 
-import Image from "next/image";
 import { LogoMark } from "@/components/logo";
-import { NAV_LINKS, SERVICES, SITE } from "@/lib/site";
+import { PageLink } from "@/components/page-link";
+import { NAV_LINKS, PILLARS, SITE, waLink, DEFAULT_WA_MESSAGE } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-border bg-ink-2/60" role="contentinfo">
+    <footer className="mt-auto bg-night text-ivory/70" role="contentinfo">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:px-8 lg:grid-cols-4">
         {/* Brand */}
         <div className="lg:col-span-1">
           <div className="flex items-center gap-3">
             <LogoMark size={52} />
-            <span className="font-display text-lg font-bold leading-tight text-ivory">
-              Mulya Juana
+            <span className="font-display text-lg leading-tight font-bold text-ivory">
+              Mulya Konveksi
               <br />
-              Syifa Collection
+              <span className="text-sm font-semibold tracking-[0.18em] text-gold-2">
+                UJANG JUANA COLLECTION
+              </span>
             </span>
           </div>
-          <p className="mt-5 text-sm leading-relaxed text-sand">
-            Konveksi & produsen busana premium di {SITE.city}, {SITE.provinceShort} sejak{" "}
-            {SITE.estYear}. Menenun kualitas, merajut kepercayaan.
+          <p className="mt-5 text-sm leading-relaxed">
+            Konveksi & produsen busana di {SITE.city}, {SITE.provinceShort} sejak{" "}
+            {SITE.estYear}. Menjahit kualitas, merajut kepercayaan.
           </p>
-          <div className="mt-6 h-12 w-12 overflow-hidden rounded-full border border-gold/35">
-            <Image
-              src="/images/logo-emblem.png"
-              alt="Lambang MJS Collection"
-              width={48}
-              height={48}
-              className="object-cover"
-            />
-          </div>
+          <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-night-2 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.22em] text-gold-2">
+            Est. {SITE.estYear} · Tasikmalaya
+          </p>
         </div>
 
         {/* Navigasi */}
@@ -38,27 +34,29 @@ export function Footer() {
           <h3 className="text-xs font-bold uppercase tracking-[0.28em] text-gold-2">Jelajahi</h3>
           <ul className="mt-5 space-y-3">
             {NAV_LINKS.map((l) => (
-              <li key={l.href}>
-                <a
-                  href={l.href}
-                  className="text-sm text-sand transition-colors hover:text-gold-3"
+              <li key={l.page}>
+                <PageLink
+                  page={l.page}
+                  className="text-sm transition-colors hover:text-gold-3"
                 >
                   {l.label}
-                </a>
+                </PageLink>
               </li>
             ))}
           </ul>
         </nav>
 
-        {/* Layanan */}
+        {/* Pilar usaha */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-[0.28em] text-gold-2">Layanan</h3>
+          <h3 className="text-xs font-bold uppercase tracking-[0.28em] text-gold-2">
+            Pilar Usaha
+          </h3>
           <ul className="mt-5 space-y-3">
-            {SERVICES.slice(0, 6).map((s) => (
-              <li key={s.title}>
-                <a href="#layanan" className="text-sm text-sand transition-colors hover:text-gold-3">
-                  {s.title}
-                </a>
+            {PILLARS.map((p) => (
+              <li key={p.title}>
+                <PageLink page="layanan" className="text-sm transition-colors hover:text-gold-3">
+                  {p.title}
+                </PageLink>
               </li>
             ))}
           </ul>
@@ -67,35 +65,38 @@ export function Footer() {
         {/* Kontak */}
         <div>
           <h3 className="text-xs font-bold uppercase tracking-[0.28em] text-gold-2">Kontak</h3>
-          <address className="mt-5 space-y-3 text-sm not-italic leading-relaxed text-sand">
-            <p>
-              {SITE.address.street}
-              <br />
-              {SITE.address.urbanVillage}, {SITE.address.district}
-              <br />
-              {SITE.address.cityFull}, {SITE.address.provinceShort}
-            </p>
+          <address className="mt-5 space-y-3 text-sm leading-relaxed not-italic">
+            <p>{SITE.addressOneLine}</p>
             <p>{SITE.operationalHours}</p>
-            <p>
+            <p className="flex flex-col gap-2">
+              <a
+                href={waLink(DEFAULT_WA_MESSAGE)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit text-gold-2 transition-colors hover:text-gold-3"
+              >
+                WhatsApp kami
+              </a>
               <a
                 href={SITE.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gold-2 transition-colors hover:text-gold-3"
+                className="w-fit text-gold-2 transition-colors hover:text-gold-3"
               >
-                Petunjuk arah →
+                Petunjuk arah Google Maps
               </a>
             </p>
           </address>
         </div>
       </div>
 
-      <div className="border-t border-border/60">
+      <div className="border-t border-ivory/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-center md:flex-row md:px-8 md:text-left">
-          <p className="text-xs text-sand/80">
-            © {new Date().getFullYear()} {SITE.name}. Seluruh hak cipta dilindungi.
+          <p className="text-xs">
+            © {new Date().getFullYear()} {SITE.name} — {SITE.brandLine}. Seluruh hak cipta
+            dilindungi.
           </p>
-          <p className="text-xs text-sand/80">
+          <p className="text-xs">
             Dijahit dengan bangga di {SITE.city} · {SITE.provinceShort}
           </p>
         </div>

@@ -1,15 +1,22 @@
 // ============================================================
-//  DATA PUSAT — Mulya Juana Syifa Collection
-//  Konveksi Premium Tasikmalaya, Jawa Barat
+//  DATA PUSAT — MULYA KONVEKSI · Ujang Juana Collection
+//  Konveksi, Pesanan Khusus, Grosir & Retail — Tasikmalaya
+//  Catatan: data perizinan/KBLI/keuangan sifatnya RAHASIA dan
+//  sengaja TIDAK dimuat di situs publik ini.
 // ============================================================
 
-// TODO: Ganti dengan nomor WhatsApp asli milik konveksi (format internasional tanpa "+")
+// TODO: Ganti dengan nomor WhatsApp asli milik konveksi
+// (format internasional tanpa "+" — contoh: 62812xxxxxxxx)
 export const WHATSAPP_NUMBER = "6281234567890";
 
+// TODO: Ganti dengan akun Instagram asli
+export const INSTAGRAM_HANDLE = "@mulyakonveksi.tsm";
+
 export const SITE = {
-  name: "Mulya Juana Syifa Collection",
-  shortName: "MJS Collection",
-  tagline: "Menenun Kualitas, Merajut Kepercayaan",
+  name: "Mulya Konveksi",
+  brandLine: "Ujang Juana Collection",
+  shortName: "Mulya Konveksi",
+  tagline: "Menjahit Kualitas, Merajut Kepercayaan",
   estYear: 2020,
   moveYear: 2025,
   type: "Konveksi & Produsen Busana",
@@ -25,13 +32,12 @@ export const SITE = {
   addressOneLine:
     "Jl. Karikil, Kp. Cibeureum RT 001/01, Kel. Cipari, Kec. Mangkubumi, Kota Tasikmalaya, Jawa Barat",
   operationalHours: "Senin – Sabtu, 08.00 – 17.00 WIB",
+  mapsQuery:
+    "Jl.%20Karikil%20Kp.%20Cibeureum%2C%20Cipari%2C%20Mangkubumi%2C%20Kota%20Tasikmalaya%2C%20Jawa%20Barat",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=" +
-    encodeURIComponent(
-      "Mulya Juana Syifa Collection, Kp. Cibeureum, Cipari, Mangkubumi, Kota Tasikmalaya"
-    ),
-  // TODO: Ganti dengan akun sosial media asli
-  instagram: "@mulyajuanasyifa",
+    "https://www.google.com/maps/search/?api=1&query=Jl.%20Karikil%20Kp.%20Cibeureum%2C%20Cipari%2C%20Mangkubumi%2C%20Kota%20Tasikmalaya",
+  mapsEmbed:
+    "https://maps.google.com/maps?q=Jl.%20Karikil%20Kp.%20Cibeureum%2C%20Cipari%2C%20Mangkubumi%2C%20Kota%20Tasikmalaya&z=15&ie=UTF8&iwloc=&output=embed",
 } as const;
 
 export const waLink = (customMessage?: string) =>
@@ -40,212 +46,309 @@ export const waLink = (customMessage?: string) =>
   }`;
 
 export const DEFAULT_WA_MESSAGE =
-  "Assalamualaikum, saya ingin menanyakan penawaran produksi konveksi di Mulya Juana Syifa Collection.";
+  "Assalamualaikum, saya ingin bertanya tentang layanan produksi di Mulya Konveksi (Ujang Juana Collection).";
 
-export const NAV_LINKS = [
-  { href: "#beranda", label: "Beranda" },
-  { href: "#tentang", label: "Tentang" },
-  { href: "#layanan", label: "Layanan" },
-  { href: "#portofolio", label: "Portofolio" },
-  { href: "#proses", label: "Proses" },
-  { href: "#kontak", label: "Kontak" },
-] as const;
-
+// ---------- Statistik (angka faktual & aman) ----------
 export const STATS = [
-  { value: 5, suffix: "+", label: "Tahun Pengalaman" },
-  { value: 15000, suffix: "+", label: "Potong Produksi" },
-  { value: 120, suffix: "+", label: "Klien & Instansi" },
-  { value: 98, suffix: "%", label: "Ketepatan Waktu" },
+  { value: 2020, suffix: "", label: "Tahun Berdiri", plain: true },
+  { value: 4, suffix: "", label: "Pilar Usaha" },
+  { value: 9, suffix: "+", label: "Kategori Produk" },
+  { value: 5, suffix: "+", label: "Tahun Berkarya" },
 ] as const;
 
+// ---------- Pita berjalan ----------
 export const MARQUEE_ITEMS = [
+  "Produksi Konveksi",
+  "Pesanan Khusus & Kustom",
+  "Grosir & Distribusi",
+  "Penjualan Retail",
   "Seragam Sekolah & Instansi",
   "Kaos & Polo Shirt",
   "Jersey & Sportswear",
   "Jaket & Hoodie",
-  "Gamis & Busana Muslim",
-  "Seragam Kerja",
+  "Gamis, Mukena & Koko",
+  "Kebaya Custom",
   "Bordir & Sablon",
-  "Produksi Custom B2B",
 ] as const;
 
+// ---------- Empat Pilar Usaha ----------
+export const PILLARS = [
+  {
+    num: "01",
+    icon: "factory",
+    title: "Produksi Konveksi",
+    subtitle: "Produksi massal pakaian jadi",
+    desc: "Produksi pakaian jadi dalam jumlah besar — kaos, seragam, kemeja, celana, jaket, hingga busana muslim — dengan jahitan rapi, warna konsisten antar batch, dan kontrol kualitas di setiap tahap.",
+    points: ["Produksi massal & borongan", "Kontrol kualitas per batch", "Kapasitas menyesuaikan pesanan"],
+  },
+  {
+    num: "02",
+    icon: "scissors",
+    title: "Pesanan Khusus",
+    subtitle: "Penjahitan kustom & kustomisasi",
+    desc: "Pakaian dibuat khusus mengikuti ukuran, desain, dan permintaan pelanggan — seragam khusus, kebaya, busana custom, hingga detail desain eksklusif yang tidak tersedia di pasaran.",
+    points: ["Ukuran & desain khusus", "Sampel disetujui lebih dulu", "Konsultasi bahan & model"],
+  },
+  {
+    num: "03",
+    icon: "boxes",
+    title: "Grosir & Distribusi",
+    subtitle: "Penjualan partai besar",
+    desc: "Suplai pakaian dalam jumlah besar untuk toko, agen, reseller, distributor, dan pelanggan bisnis — harga produsen langsung tanpa perantara, kemasan rapi siap kirim.",
+    points: ["Harga langsung dari produsen", "Suplai rutin & stabil", "Siap kirim ke seluruh Indonesia"],
+  },
+  {
+    num: "04",
+    icon: "store",
+    title: "Penjualan Retail",
+    subtitle: "Penjualan langsung satuan",
+    desc: "Belanja langsung satuan tanpa ribet — kaos, kemeja, celana, jaket, mukena, hingga pakaian olahraga. Datang ke workshop atau pesan lewat WhatsApp.",
+    points: ["Beli satuan langsung", "Katalog produk lengkap", "Terbuka untuk umum"],
+  },
+] as const;
+
+// ---------- Delapan jalur layanan produksi ----------
 export const SERVICES = [
   {
     icon: "school",
     title: "Seragam Sekolah & Instansi",
-    desc: "Produksi seragam SD–SMA, almamater, ospek, hingga seragam instansi pemerintah dengan standar ketelitian tinggi dan konsistensi warna lintas batch.",
+    desc: "Seragam SD–SMA, almamater, ospek, hingga seragam instansi dengan ketelitian ukuran tinggi dan warna konsisten lintas batch.",
   },
   {
     icon: "shirt",
     title: "Kaos & Polo Shirt",
-    desc: "Kaos polos, polo bordir, dan kaos event menggunakan cotton combed 30s–24s, pique, hingga dry-fit yang nyaman dan tahan dicuci berulang.",
+    desc: "Kaos polos, kaos event, dan polo bordir — cotton combed 30s/24s, pique, hingga bahan performance yang nyaman dan awet.",
   },
   {
     icon: "dumbbell",
-    title: "Jersey & Sportswear",
-    desc: "Jersey futsal, basket, dan komunitas dengan printing nama–nomor punggung, desain sublimasi full color, serta bahan yang ringan menyerap keringat.",
+    title: "Jersey & Pakaian Olahraga",
+    desc: "Jersey futsal, basket, dan komunitas dengan desain full color, aksen nama & nomor, bahan ringan cepat kering.",
   },
   {
     icon: "jacket",
     title: "Jaket & Hoodie",
-    desc: "Jaket bomber, varsity, windbreaker, dan hoodie dengan jahitan kuat, resleting premium, serta detail bordir khas brand Anda.",
+    desc: "Jaket bomber, varsity, windbreaker, dan hoodie dengan jahitan kuat, resleting halus, serta detail bordir khas brand Anda.",
   },
   {
     icon: "flower",
     title: "Gamis & Busana Muslim",
-    desc: "Gamis, tunik, dan setelan muslimah dengan potongan elegan dan bahan yang jatuh sempurna — cocok untuk retail, event, maupun pesanan personal.",
+    desc: "Gamis, tunik, koko, dan mukena dengan potongan elegan dan bahan jatuh sempurna — untuk retail, event, maupun personal.",
   },
   {
     icon: "briefcase",
-    title: "Seragam Kerja & Marketing",
-    desc: "Kemeja dan seragam lapangan untuk perusahaan, pabrik, hotel, dan tim marketing — dirancang awet, fungsional, dan melekatkan citra profesional.",
+    title: "Seragam Kerja & Lapangan",
+    desc: "Kemeja dan seragam lapangan untuk perusahaan, pabrik, hotel, dan tim marketing — awet, fungsional, dan profesional.",
   },
   {
     icon: "sparkles",
     title: "Bordir & Sablon",
-    desc: "Layanan bordir komputer, sablon manual, dan DTF dengan ketahanan tinggi. Logo dan desain Anda kami reproduce dengan akurat.",
+    desc: "Bordir komputer, sablon manual, dan DTF dengan ketahanan tinggi. Logo dan desain Anda kami reproduksi akurat.",
   },
   {
-    icon: "handshake",
-    title: "Produksi Custom B2B",
-    desc: "Kemitraan produksi untuk toko, brand owner, dan distributor: grosir, label custom, hangtag, hingga konsultasi pemilihan bahan dari hulu ke hilir.",
+    icon: "scissors",
+    title: "Jahitan Kustom & Kebaya",
+    desc: "Pesanan khusus per ukuran dan desain — kebaya, busana custom, dan pakaian yang dibuat benar-benar personal.",
   },
 ] as const;
 
-export type ProductCategory = "Seragam" | "Olahraga" | "Fashion" | "Kerja";
+// ---------- Katalog produk ----------
+export type ProductCategory =
+  | "Kaos & Atasan"
+  | "Seragam"
+  | "Olahraga"
+  | "Busana Muslim"
+  | "Outerwear"
+  | "Kustom";
+
+export const PRODUCT_FILTERS = [
+  "Semua",
+  "Kaos & Atasan",
+  "Seragam",
+  "Olahraga",
+  "Busana Muslim",
+  "Outerwear",
+  "Kustom",
+] as const;
 
 export const PRODUCTS: {
   name: string;
   category: ProductCategory;
   image: string;
   desc: string;
+  tag?: string;
 }[] = [
   {
-    name: "Polo Shirt Premium",
-    category: "Kerja",
-    image: "/images/product-polo.png",
-    desc: "Polo bordir emblem emas, bahan pique premium untuk tim korporat.",
+    name: "Kaos Polos & Sablon",
+    category: "Kaos & Atasan",
+    image: "/images/prod-kaos.png",
+    desc: "Cotton combed yang lembut, jahitan rapi, pilihan warna lengkap — untuk event, komunitas, maupun brand Anda.",
+    tag: "Terlaris",
   },
   {
-    name: "Seragam Sekolah Lengkap",
+    name: "Kemeja Pria & Wanita",
+    category: "Kaos & Atasan",
+    image: "/images/prod-kemeja.png",
+    desc: "Kemeja kerja dan formal dengan potongan rapi, kancing kuat, dan bahan yang adem untuk iklim tropis.",
+  },
+  {
+    name: "Polo Shirt Bordir",
+    category: "Kaos & Atasan",
+    image: "/images/prod-polo.png",
+    desc: "Pique premium dengan bordir emblem — favorit seragam perusahaan, hotel, dan tim marketing.",
+  },
+  {
+    name: "Seragam Sekolah & Instansi",
     category: "Seragam",
-    image: "/images/product-seragam.png",
-    desc: "Putih bersih dengan potongan rapi — konsisten untuk satu angkatan.",
+    image: "/images/prod-seragam.png",
+    desc: "Putih bersih dengan potongan seragam presisi — konsisten untuk satu angkatan, dari SD hingga instansi.",
+    tag: "Unggulan",
   },
   {
-    name: "Jersey Futsal Custom",
+    name: "Jersey & Seragam Olahraga",
     category: "Olahraga",
-    image: "/images/product-jersey.png",
-    desc: "Zamrud & emas, sublimasi full color dengan nama dan nomor punggung.",
+    image: "/images/prod-jersey.png",
+    desc: "Desain full color bebas ekspresi, bahan ringan menyerap keringat, siap untuk laga setiap pekan.",
   },
   {
-    name: "Jaket & Hoodie Streetwear",
-    category: "Fashion",
-    image: "/images/product-jaket.png",
-    desc: "Obsidian dengan detail bordir champagne — kelas brand apparel.",
+    name: "Jaket & Hoodie",
+    category: "Outerwear",
+    image: "/images/prod-jaket.png",
+    desc: "Bomber, varsity, dan hoodie dengan jahitan kuat serta finishing bersih kelas brand apparel.",
   },
   {
-    name: "Gamis & Hijab Set",
-    category: "Fashion",
-    image: "/images/product-gamis.png",
-    desc: "Sutra ivory champagne dengan drape jatuh yang anggun.",
+    name: "Gamis & Set Muslimah",
+    category: "Busana Muslim",
+    image: "/images/prod-gamis.png",
+    desc: "Drape jatuh anggun dengan bahan nyaman — cocok untuk retail busana muslim maupun pesanan personal.",
   },
   {
-    name: "Paket Kain & Aksesoris",
-    category: "Seragam",
-    image: "/images/product-kaoskaki.png",
-    desc: "Kurasi bahan cotton, fleece, dan aksesoris jahit berkualitas.",
+    name: "Mukena & Koko",
+    category: "Busana Muslim",
+    image: "/images/prod-mukena.png",
+    desc: "Mukena ber-detail dan koko premium — penjualan retail satuan maupun pesanan masjid dan pesantren.",
+  },
+  {
+    name: "Kebaya & Busana Kustom",
+    category: "Kustom",
+    image: "/images/prod-kebaya.png",
+    desc: "Pesanan khusus per ukuran dan desain — kebaya modern hingga tradisional, dibuat benar-benar personal.",
+    tag: "Custom",
   },
 ];
 
+// ---------- Alur kerja ----------
 export const PROCESS_STEPS = [
   {
     step: "01",
     title: "Konsultasi & Estimasi",
-    desc: "Ceritakan kebutuhan Anda: jenis busana, jumlah, bahan, dan anggaran. Kami berikan estimasi transparan tanpa biaya tersembunyi.",
+    desc: "Ceritakan kebutuhan Anda: jenis busana, jumlah, bahan, dan target waktu. Kami berikan estimasi yang jelas dan transparan tanpa biaya tersembunyi.",
   },
   {
     step: "02",
-    title: "Desain & Sampling",
-    desc: "Tim kami menyiapkan desain beserta sampel fisik. Revisi dilakukan sampai Anda puas sebelum produksi massal dimulai.",
+    title: "Desain & Pemilihan Bahan",
+    desc: "Tim kami menyiapkan desain, pola, dan rekomendasi bahan terbaik. Setiap detail dibicarakan bersama sebelum lanjut.",
   },
   {
     step: "03",
-    title: "Produksi Massal",
-    desc: "Cutting, penjahitan, dan finishing dikerjakan oleh penjahit berpengalaman dengan kontrol kualitas di setiap tahap.",
+    title: "Sampel Disetujui",
+    desc: "Sebelum produksi berjalan, sampel fisik dibuat untuk Anda nilai. Revisi dilakukan sampai Anda benar-benar puas.",
   },
   {
     step: "04",
-    title: "Quality Control",
-    desc: "Setiap potong diperiksa: kesimetrian jahitan, warna, ukuran, dan kebersihan finishing. Produk cacat tidak pernah lolos.",
+    title: "Produksi & Quality Control",
+    desc: "Cutting, penjahitan, dan finishing dikerjakan oleh penjahit berpengalaman. Setiap potong diperiksa: kesimetrian, warna, ukuran, dan kebersihan.",
   },
   {
     step: "05",
-    title: "Distribusi & Garansi",
-    desc: "Pesanan dikemas rapi dan dikirim tepat waktu. Ada temuan jahitan? Kami perbaiki dengan garansi penuh.",
+    title: "Penyerahan & Garansi",
+    desc: "Pesanan dikemas rapi dan diselesaikan tepat waktu. Ada temuan cacat jahitan? Kami perbaiki dengan garansi penuh.",
   },
 ] as const;
 
-export const FEATURES = [
+// ---------- Nilai perusahaan ----------
+export const VALUES = [
+  { title: "Presisi", desc: "Akurasi ukuran, pola, dan jahitan di setiap potong produksi." },
+  { title: "Integritas", desc: "Transparan dari harga, bahan, hingga kemampuan produksi." },
+  { title: "Tepat Waktu", desc: "Deadline adalah komitmen yang kami jaga, bukan sekadar janji." },
+  { title: "Amanah", desc: "Setiap order adalah titipan pelanggan yang kami rawat sampai benang terakhir." },
+] as const;
+
+// ---------- Linimasa ----------
+export const TIMELINE = [
   {
-    icon: "wallet",
-    title: "Harga Produsen",
-    desc: "Pesan langsung dari konveksi tanpa perantara — harga grosir dengan kualitas yang bisa dipertanggungjawabkan.",
+    year: "2020",
+    title: "Awal Mula di Tasikmalaya",
+    desc: "Mulya Konveksi berdiri dengan keyakinan sederhana: busana berkualitas tidak harus datang dari kota besar. Dimulai dari ruang kerja sederhana dengan mesin terbatas.",
   },
   {
-    icon: "shield",
-    title: "Garansi Jahitan",
-    desc: "Temuan cacat jahitan atau sablon akan kami ganti dan perbaiki tanpa biaya tambahan. Kepercayaan Anda adalah prioritas kami.",
+    year: "2020–2024",
+    title: "Bertumbuh Bersama Pelanggan",
+    desc: "Satu pesanan demi satu pesanan, reputasi terbangun. Dipercaya sekolah, komunitas, brand owner, dan pelanggan retail — tim dan peralatan terus bertambah.",
   },
   {
-    icon: "clock",
-    title: "Tepat Waktu",
-    desc: "Timeline produksi disepakati di awal dan kami patuhi. Deadline acara Anda adalah komitmen kami.",
+    year: "2025",
+    title: "Babak Baru di Kp. Cibeureum",
+    desc: "Kami pindah ke fasilitas baru di Jl. Karikil, Kp. Cibeureum, Kel. Cipari, Kec. Mangkubumi — ruang produksi lebih luas, lebih terang, dengan alur kerja lebih rapi.",
   },
   {
-    icon: "palette",
-    title: "Konsultasi Desain",
-    desc: "Belum punya desain? Tim kreatif kami bantu menyusun konsep, memilih bahan, hingga mockup sebelum produksi.",
+    year: "Hari Ini",
+    title: "Empat Pilar, Satu Standar",
+    desc: "Produksi konveksi, pesanan khusus, grosir & distribusi, dan penjualan retail berjalan di bawah standar kualitas yang sama: jahitan rapi, amanah, dan tepat waktu.",
   },
 ] as const;
 
-// Catatan: Testimoni di bawah adalah konten contoh — silakan ganti dengan
-// testimoni pelanggan asli setelah situs berjalan.
-export const TESTIMONIALS = [
+// ---------- Segmen pelanggan ----------
+export const SEGMENTS = [
+  { icon: "school", title: "Sekolah & Komite", desc: "Seragam angkatan, almamater, dan keperluan sekolah." },
+  { icon: "briefcase", title: "Instansi & Korporat", desc: "Seragam kerja, kemeja lapangan, dan apparel kantor." },
+  { icon: "dumbbell", title: "Klub & Komunitas", desc: "Jersey tim, kaos komunitas, dan merchandising olahraga." },
+  { icon: "store", title: "Brand Owner & Toko", desc: "Produksi brand apparel dengan label dan kemasan sendiri." },
+  { icon: "boxes", title: "Reseller & Distributor", desc: "Suplai grosir rutin dengan harga langsung produsen." },
+  { icon: "sparkles", title: "Event Organizer", desc: "Kaos dan apparel event dengan tenggat yang ketat." },
+  { icon: "heart", title: "Pesanan Personal", desc: "Busana kustom per ukuran — kebaya, gamis, hingga seragam pribadi." },
+] as const;
+
+// ---------- Bahan & material ----------
+export const MATERIALS = [
+  "Cotton Combed 30s",
+  "Cotton Combed 24s",
+  "Pique",
+  "CVC",
+  "Drill",
+  "Twil",
+  "Fleece",
+  "Hoodie Terry",
+  "Satin",
+  "Hotel",
+  "Jersey Performance",
+  "Sifon",
+] as const;
+
+// ---------- FAQ ----------
+export const FAQ = [
   {
-    name: "Bapak Hendra",
-    role: "Pengelola Toko Seragam, Tasikmalaya",
-    quote:
-      "Pesanan 2.000 kaos selesai lebih cepat dari jadwal, jahitannya rapi dan konsisten. Partner produksi yang bisa diandalkan.",
+    q: "Apakah ada minimum order?",
+    a: "Fleksibel. Kami melayani produksi massal untuk konveksi dan grosir, sekaligus penjualan retail satuan. Konsultasikan jumlah Anda — kami sesuaikan jalur pelayanannya.",
   },
   {
-    name: "Ibu Ratna",
-    role: "Bendahara Komite Sekolah",
-    quote:
-      "Seragam satu angkatan selesai sebelum hari pertama masuk. Warna dan ukuran nyaris tanpa selisih — kami sangat puas.",
+    q: "Berapa lama waktu pengerjaan?",
+    a: "Tergantung jenis dan jumlah pesanan. Estimasi waktu yang jelas diberikan saat konsultasi awal dan kami patuhi — deadline acara Anda adalah komitmen kami.",
   },
   {
-    name: "Bapak Dimas",
-    role: "Manajer Klub Futsal",
-    quote:
-      "Desain jersey kami wujudkan dengan detail sempurna. Nama dan nomor punggungnya tajam, keren banget di lapangan!",
+    q: "Bisa memakai desain sendiri?",
+    a: "Tentu bisa. Kirimkan desain atau referensi Anda — tim kami membantu penyusunan pola, pemilihan bahan, sampel, hingga reproduksi logo untuk bordir dan sablon.",
   },
   {
-    name: "Ibu Salsabila",
-    role: "Owner Brand Muslimah",
-    quote:
-      "Gamis-gamis produksi mereka selalu laku di toko saya. Kualitas bahan dan jahitannya pantas jual dengan harga premium.",
+    q: "Apakah bisa minta sampel dulu?",
+    a: "Ya. Sampel fisik dibuat sebelum produksi massal dimulai, dan revisi dilakukan sampai Anda menyetujui hasilnya. Kepuasan Anda lebih penting daripada kecepatan kami.",
   },
-  {
-    name: "Bapak Agus",
-    role: "HRD Pabrik, Ciamis",
-    quote:
-      "Seragam kerja 500 karyawan selesai tepat waktu. Komunikasinya enak, revisi sampel juga dilayani dengan sabar.",
-  },
-  {
-    name: "Ibu Dewi",
-    role: "Event Organizer",
-    quote:
-      "Kaos event 1.000 pcs dengan sablon kompleks — hasilnya bersih dan awet. Pesanan berikutnya pasti ke sini lagi.",
-  },
+] as const;
+
+// ---------- Navigasi antar halaman ----------
+export const NAV_LINKS = [
+  { page: "beranda", label: "Beranda" },
+  { page: "tentang", label: "Tentang" },
+  { page: "layanan", label: "Layanan" },
+  { page: "produk", label: "Produk" },
+  { page: "kontak", label: "Kontak" },
 ] as const;

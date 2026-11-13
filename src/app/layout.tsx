@@ -17,33 +17,53 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: `${SITE.name} — Konveksi Premium ${SITE.city}`,
+  title: `${SITE.name} ${SITE.brandLine} — Konveksi ${SITE.city} | Produksi, Kustom, Grosir & Retail`,
   description:
-    "Konveksi & produsen busana premium di Tasikmalaya, Jawa Barat sejak 2020. Produksi seragam sekolah & instansi, kaos & polo, jersey, jaket, gamis, bordir & sablon. Kualitas presisi, harga produsen, garansi jahitan.",
+    "Konveksi & produsen busana di Tasikmalaya, Jawa Barat sejak 2020. Produksi konveksi, pesanan khusus/kustom, grosir & distribusi, dan penjualan retail: seragam, kaos, polo, jersey, jaket, gamis, mukena, kebaya. Kualitas presisi, harga langsung produsen.",
   keywords: [
     "konveksi tasikmalaya",
     "konveksi mangkubumi",
     "produsen seragam tasikmalaya",
     "jahit seragam",
-    "jersey custom",
+    "jersey custom tasikmalaya",
     "konveksi jawa barat",
-    "Mulya Juana Syifa Collection",
+    "grosir pakaian tasikmalaya",
+    "kebaya custom",
+    "mulya konveksi",
+    "ujang juana collection",
   ],
-  authors: [{ name: SITE.name }],
+  authors: [{ name: `${SITE.name} ${SITE.brandLine}` }],
   openGraph: {
-    title: `${SITE.name} — Konveksi Premium ${SITE.city}`,
+    title: `${SITE.name} ${SITE.brandLine} — Konveksi ${SITE.city}`,
     description:
-      "Menenun Kualitas, Merajut Kepercayaan. Produsen busana premium sejak 2020 di Tasikmalaya.",
-    siteName: SITE.name,
+      "Menjahit Kualitas, Merajut Kepercayaan. Produksi konveksi, pesanan khusus, grosir & retail sejak 2020 di Tasikmalaya.",
+    siteName: `${SITE.name} ${SITE.brandLine}`,
     type: "website",
     locale: "id_ID",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0b0a07",
+  themeColor: "#faf6ec",
   width: "device-width",
   initialScale: 1,
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  name: `${SITE.name} ${SITE.brandLine}`,
+  description: SITE.tagline,
+  foundingDate: String(SITE.estYear),
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: SITE.address.street,
+    addressLocality: `${SITE.address.urbanVillage}, ${SITE.address.district}`,
+    addressRegion: SITE.address.cityFull,
+    addressCountry: "ID",
+  },
+  areaServed: "Indonesia",
+  priceRange: "$$",
 };
 
 export default function RootLayout({
@@ -54,8 +74,12 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body
-        className={`${playfair.variable} ${jakarta.variable} antialiased bg-ink text-ivory grain`}
+        className={`${playfair.variable} ${jakarta.variable} antialiased bg-cream text-ink grain`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>

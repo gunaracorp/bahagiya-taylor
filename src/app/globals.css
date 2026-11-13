@@ -29,41 +29,49 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* ===== Brand: Benang Emas ===== */
-  --color-ink: #0b0a07;
-  --color-ink-2: #131109;
-  --color-ink-3: #1b1710;
-  --color-gold: #c9a227;
-  --color-gold-2: #d9b45c;
-  --color-gold-3: #f2d894;
-  --color-gold-deep: #8a6d1c;
-  --color-ivory: #f4ede0;
-  --color-sand: #b3a78d;
-  --color-emerald-brand: #1e5c46;
-  --color-emerald-soft: #2e7d5f;
+  /* ===== Brand: Mulya Konveksi — terang, jelas, hangat ===== */
+  --color-cream: #faf6ec;
+  --color-cream-2: #f2ecdb;
+  --color-paper: #fffdf7;
+  --color-ink: #1c2a22;
+  --color-ink-soft: #55665b;
+  --color-emerald: #0e5b43;
+  --color-emerald-deep: #093f2f;
+  --color-emerald-soft: #15785a;
+  --color-emerald-tint: #e7f0e9;
+  --color-gold: #c9962b;
+  --color-gold-2: #dfb34c;
+  --color-gold-3: #f2d492;
+  --color-gold-deep: #96701c;
+  --color-terra: #c05a2e;
+  --color-terra-tint: #f7e8dd;
+  --color-night: #0c2b21;
+  --color-night-2: #123c2e;
+  --color-ivory: #f7f2e6;
+  --color-line: #e6dcc3;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: #0b0a07;
-  --foreground: #f4ede0;
-  --card: #131109;
-  --card-foreground: #f4ede0;
-  --popover: #131109;
-  --popover-foreground: #f4ede0;
-  --primary: #c9a227;
-  --primary-foreground: #0b0a07;
-  --secondary: #1b1710;
-  --secondary-foreground: #f4ede0;
-  --muted: #1b1710;
-  --muted-foreground: #b3a78d;
-  --accent: #1b1710;
-  --accent-foreground: #f2d894;
-  --destructive: #a33b2e;
-  --destructive-foreground: #f4ede0;
-  --border: rgba(201, 162, 39, 0.16);
-  --input: rgba(201, 162, 39, 0.22);
-  --ring: #c9a227;
+  --radius: 0.75rem;
+  --background: #faf6ec;
+  --foreground: #1c2a22;
+  --card: #fffdf7;
+  --card-foreground: #1c2a22;
+  --popover: #fffdf7;
+  --popover-foreground: #1c2a22;
+  --primary: #0e5b43;
+  --primary-foreground: #f7f2e6;
+  --secondary: #f2ecdb;
+  --secondary-foreground: #1c2a22;
+  --muted: #f2ecdb;
+  --muted-foreground: #55665b;
+  --accent: #e7f0e9;
+  --accent-foreground: #093f2f;
+  --destructive: #b23b2e;
+  --destructive-foreground: #faf6ec;
+  --border: #e6dcc3;
+  --input: #e6dcc3;
+  --ring: #c9962b;
 }
 
 @layer base {
@@ -75,23 +83,23 @@
     overflow-x: clip;
   }
   body {
-    @apply bg-ink text-ivory font-sans antialiased;
+    @apply bg-cream text-ink font-sans antialiased;
     overflow-x: clip;
   }
   ::selection {
-    background: rgba(201, 162, 39, 0.85);
-    color: #0b0a07;
+    background: rgba(14, 91, 67, 0.9);
+    color: #faf6ec;
   }
   ::-webkit-scrollbar {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #0b0a07;
+    background: #f2ecdb;
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#c9a227, #8a6d1c);
+    background: linear-gradient(#0e5b43, #093f2f);
     border-radius: 8px;
-    border: 2px solid #0b0a07;
+    border: 2px solid #f2ecdb;
   }
 }
 
@@ -101,7 +109,7 @@
 }
 
 .text-gold-gradient {
-  background: linear-gradient(100deg, #8a6d1c 0%, #c9a227 25%, #f7e6b0 50%, #c9a227 75%, #8a6d1c 100%);
+  background: linear-gradient(100deg, #96701c 0%, #c9962b 30%, #e9c76a 50%, #c9962b 70%, #96701c 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -109,8 +117,15 @@
   animation: shimmer 6s linear infinite;
 }
 
-.text-ivory-gradient {
-  background: linear-gradient(180deg, #fffdf6 0%, #f4ede0 55%, #c9bfa4 100%);
+.text-emerald-gradient {
+  background: linear-gradient(100deg, #093f2f 0%, #0e5b43 45%, #15785a 70%, #0e5b43 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-ink-gradient {
+  background: linear-gradient(180deg, #1c2a22 20%, #3c4f42 90%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -141,15 +156,6 @@
   }
 }
 
-@keyframes kenburns {
-  0% {
-    transform: scale(1) translateY(0);
-  }
-  100% {
-    transform: scale(1.14) translateY(-1.5%);
-  }
-}
-
 @keyframes floaty {
   0%,
   100% {
@@ -169,7 +175,7 @@
 @keyframes pulse-ring {
   0% {
     transform: scale(1);
-    opacity: 0.55;
+    opacity: 0.5;
   }
   80%,
   100% {
@@ -184,7 +190,7 @@
     opacity: 1;
   }
   70% {
-    transform: translateY(16px);
+    transform: translateY(14px);
     opacity: 0;
   }
   100% {
@@ -193,13 +199,19 @@
   }
 }
 
+@keyframes thread-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes glow-pulse {
   0%,
   100% {
-    box-shadow: 0 0 24px rgba(201, 162, 39, 0.25);
+    box-shadow: 0 0 22px rgba(14, 91, 67, 0.28);
   }
   50% {
-    box-shadow: 0 0 48px rgba(201, 162, 39, 0.5);
+    box-shadow: 0 0 44px rgba(201, 150, 43, 0.4);
   }
 }
 
@@ -218,6 +230,9 @@
 .animate-floaty {
   animation: floaty 6s ease-in-out infinite;
 }
+.animate-floaty-late {
+  animation: floaty 7.5s ease-in-out 1.2s infinite;
+}
 .animate-spin-slower {
   animation: spin-slow 22s linear infinite;
 }
@@ -225,8 +240,13 @@
   animation: glow-pulse 3.5s ease-in-out infinite;
 }
 
-.glass {
-  background: rgba(11, 10, 7, 0.72);
+.glass-light {
+  background: rgba(250, 246, 236, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.glass-dark {
+  background: rgba(12, 43, 33, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -237,15 +257,24 @@
   inset: 0;
   z-index: 70;
   pointer-events: none;
-  opacity: 0.045;
+  opacity: 0.032;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Pola motif halus di latar terang */
+.pattern-soft {
+  background-image:
+    radial-gradient(rgba(14, 91, 67, 0.055) 1.2px, transparent 1.2px),
+    radial-gradient(rgba(201, 150, 43, 0.05) 1.2px, transparent 1.2px);
+  background-size: 26px 26px, 34px 34px;
+  background-position: 0 0, 13px 17px;
 }
 
 .stitch-line {
   background-image: repeating-linear-gradient(
     to bottom,
-    #c9a227 0px,
-    #c9a227 9px,
+    #c9962b 0px,
+    #c9962b 9px,
     transparent 9px,
     transparent 18px
   );
@@ -254,21 +283,21 @@
 .stitch-border {
   background-image: repeating-linear-gradient(
     to right,
-    rgba(201, 162, 39, 0.55) 0px,
-    rgba(201, 162, 39, 0.55) 8px,
+    rgba(201, 150, 43, 0.75) 0px,
+    rgba(201, 150, 43, 0.75) 8px,
     transparent 8px,
     transparent 16px
   );
 }
 
-.gold-frame {
+.stitch-frame {
   position: relative;
 }
-.gold-frame::after {
+.stitch-frame::after {
   content: "";
   position: absolute;
-  inset: 10px;
-  border: 1px solid rgba(201, 162, 39, 0.35);
+  inset: 12px;
+  border: 1.5px dashed rgba(201, 150, 43, 0.55);
   border-radius: inherit;
   pointer-events: none;
 }
@@ -283,7 +312,7 @@
   inset: 0;
   background: radial-gradient(
     420px circle at var(--mx, 50%) var(--my, 50%),
-    rgba(201, 162, 39, 0.12),
+    rgba(14, 91, 67, 0.08),
     transparent 65%
   );
   opacity: 0;
@@ -305,12 +334,7 @@
   left: -80%;
   width: 55%;
   height: 100%;
-  background: linear-gradient(
-    100deg,
-    transparent,
-    rgba(255, 255, 255, 0.5),
-    transparent
-  );
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.45), transparent);
   transform: skewX(-20deg);
   transition: left 0.65s ease;
 }
@@ -318,7 +342,7 @@
   left: 130%;
 }
 
-/* Section divider ornament */
+/* Ornamen pembatas judul seksi */
 .section-ornament {
   display: inline-flex;
   align-items: center;
@@ -327,9 +351,28 @@
 .section-ornament::before,
 .section-ornament::after {
   content: "";
-  height: 1px;
+  height: 1.5px;
   width: 42px;
-  background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgba(201, 150, 43, 0.85), transparent);
+}
+
+/* Thread SVG animasi menggambar */
+.thread-path {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: thread-draw 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Scrollbar tipis untuk galeri horizontal */
+.scroll-slim::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll-slim::-webkit-scrollbar-track {
+  background: #f2ecdb;
+}
+.scroll-slim::-webkit-scrollbar-thumb {
+  background: linear-gradient(#0e5b43, #093f2f);
+  border-radius: 999px;
 }
 
 /* Reduced motion respect */
@@ -337,9 +380,14 @@
   .animate-marquee,
   .animate-marquee-slow,
   .animate-floaty,
+  .animate-floaty-late,
   .animate-spin-slower,
-  .text-gold-gradient {
+  .text-gold-gradient,
+  .thread-path {
     animation: none !important;
+  }
+  .thread-path {
+    stroke-dashoffset: 0;
   }
   html {
     scroll-behavior: auto;

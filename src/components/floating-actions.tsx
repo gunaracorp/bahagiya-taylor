@@ -2,7 +2,8 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { DEFAULT_WA_MESSAGE, waLink } from "@/lib/site";
+import { WaIcon } from "@/components/motion-primitives";
+import { DEFAULT_WA_MESSAGE, waLink, SITE } from "@/lib/site";
 
 export function FloatingActions() {
   const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ export function FloatingActions() {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="fixed bottom-5 right-5 z-[75] flex flex-col items-end gap-3 md:bottom-7 md:right-7"
+          className="fixed right-5 bottom-5 z-[75] flex flex-col items-end gap-3 md:right-7 md:bottom-7"
           initial={{ opacity: 0, scale: 0.6, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.6, y: 20 }}
@@ -28,7 +29,7 @@ export function FloatingActions() {
           <motion.button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             aria-label="Kembali ke atas"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 bg-ink/85 text-gold-2 backdrop-blur-md transition-colors hover:border-gold/70 hover:text-gold-3"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-emerald/30 bg-paper text-emerald shadow-[0_6px_20px_rgba(28,42,34,0.14)] transition-colors hover:border-gold/60 hover:text-gold-deep"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -42,24 +43,22 @@ export function FloatingActions() {
             href={waLink(DEFAULT_WA_MESSAGE)}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Chat WhatsApp Mulya Juana Syifa Collection"
+            aria-label={`Chat WhatsApp ${SITE.name}`}
             className="group relative"
           >
             <span
-              className="absolute inset-0 rounded-full bg-emerald-brand"
+              className="absolute inset-0 rounded-full bg-emerald-soft"
               style={{ animation: "pulse-ring 2.2s ease-out infinite" }}
               aria-hidden="true"
             />
             <motion.span
-              className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-emerald-soft to-emerald-brand text-ivory shadow-[0_10px_30px_rgba(30,92,70,0.45)]"
+              className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-emerald-soft to-emerald-deep text-ivory shadow-[0_10px_30px_rgba(9,63,47,0.5)]"
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.92 }}
             >
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.1.2-.3.3-.5v-.5L9.6 7.6c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.8 3.2.3 1.4 1.2 2.7 2 3.7a11 11 0 0 0 4.3 3.5c1.9.8 2.6.8 3.5.7.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.2-.5Z" />
-              </svg>
+              <WaIcon className="h-7 w-7" />
             </motion.span>
-            <span className="pointer-events-none absolute right-16 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full border border-gold/30 bg-ink/90 px-4 py-2 text-xs font-semibold text-gold-2 opacity-0 backdrop-blur-md transition-all duration-300 group-hover:opacity-100">
+            <span className="pointer-events-none absolute top-1/2 right-16 -translate-y-1/2 rounded-full border border-emerald/25 bg-paper px-4 py-2 text-xs font-semibold whitespace-nowrap text-emerald opacity-0 shadow-[0_6px_20px_rgba(28,42,34,0.12)] transition-all duration-300 group-hover:opacity-100">
               Konsultasi cepat di sini
             </span>
           </a>
