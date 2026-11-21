@@ -92,10 +92,10 @@ export function TentangView() {
                 <p>
                   {SITE.name} — {SITE.brandLine} — lahir di {SITE.city} pada tahun{" "}
                   {SITE.estYear} dari keyakinan sederhana: busana berkualitas tidak harus datang
-                  dari kota besar. Pendirian kami disahkan oleh Kementerian Hukum RI sebagai
-                  badan hukum Perseroan Perorangan — reputasi kami bangun satu pesanan demi satu
-                  pesanan, untuk sekolah, komunitas, brand owner, dan pelanggan retail di
-                  sekitar Jawa Barat.
+                  dari kota besar. Sebelas tahun kami menjahit sebagai usaha keluarga sebelum
+                  badan usaha disahkan oleh Kementerian Hukum RI sebagai Perseroan Perorangan —
+                  reputasi kami bangun satu pesanan demi satu pesanan, untuk sekolah, komunitas,
+                  brand owner, dan pelanggan retail di sekitar Jawa Barat.
                 </p>
                 <p>
                   Legalitas kami lengkap: NPWP badan terdaftar di KPP Pratama Tasikmalaya pada{" "}
@@ -130,7 +130,7 @@ export function TentangView() {
         <div className="mx-auto max-w-5xl px-5 md:px-8">
           <SectionHeading
             eyebrow="Jejak Perjalanan"
-            title="Dari 2026 Sampai"
+            title="Dari 2015 Sampai"
             highlight="Hari Ini"
             desc="Empat babak yang membentuk cara kami bekerja."
           />

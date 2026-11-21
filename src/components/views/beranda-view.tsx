@@ -185,9 +185,9 @@ export function BerandaView({ base = 0 }: { base?: number }) {
                 />
               </div>
 
-              {/* Kartu melayang: Est 2026 */}
+              {/* Kartu melayang: Est 2015 */}
               <div className="animate-floaty absolute -left-4 top-8 rounded-2xl border border-line bg-paper px-5 py-3.5 shadow-[0_14px_36px_rgba(28,42,34,0.16)] md:-left-8">
-                <p className="font-display text-2xl font-bold text-emerald">2026</p>
+                <p className="font-display text-2xl font-bold text-emerald">{SITE.estYear}</p>
                 <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-ink-soft">
                   Berdiri di Tasikmalaya
                 </p>

@@ -24,7 +24,7 @@ export const SITE = {
   brandLine: "Konveksi & Produsen Busana",
   shortName: "Bahagiya Taylor",
   tagline: "Menjahit Kualitas, Merajut Kepercayaan",
-  estYear: 2026,
+  estYear: 2015,
   type: "Konveksi & Produsen Busana",
   city: "Tasikmalaya",
   province: "Jawa Barat",
@@ -57,7 +57,7 @@ export const DEFAULT_WA_MESSAGE =
 
 // ---------- Statistik (angka faktual & aman) ----------
 export const STATS = [
-  { value: 2026, suffix: "", label: "Tahun Berdiri", plain: true },
+  { value: 2015, suffix: "", label: "Tahun Berdiri", plain: true },
   { value: 4, suffix: "", label: "Pilar Usaha", plain: false },
   { value: 9, suffix: "+", label: "Kategori Produk", plain: false },
   { value: 18, suffix: "", label: "Bidang Usaha (KBLI)", plain: false },
@@ -283,14 +283,14 @@ export const VALUES = [
 // ---------- Linimasa ----------
 export const TIMELINE = [
   {
-    year: "2026",
+    year: "2015",
     title: "Lahir di Tasikmalaya",
-    desc: "BAHAGIYA TAYLOR GROUPS berdiri dengan keyakinan sederhana: busana berkualitas tidak harus datang dari kota besar. Pendirian disahkan oleh Kementerian Hukum RI sebagai badan hukum Perseroan Perorangan pada 9 November 2026.",
+    desc: "Semua berawal dari workshop kecil di Tasikmalaya dengan keyakinan sederhana: busana berkualitas tidak harus datang dari kota besar. Satu pesanan demi satu pesanan, reputasi dijahit rapi bersama setiap potongan busana.",
   },
   {
     year: "Nov 2026",
     title: "Legalitas Lengkap",
-    desc: "NPWP badan terdaftar di KPP Pratama Tasikmalaya pada 10 November 2026 — dasar yang kokoh untuk melayani pesanan sekolah, instansi, dan korporat dengan surat-menyurat resmi.",
+    desc: "Usaha yang berjalan sejak 2015 disahkan Kementerian Hukum RI sebagai Perseroan Perorangan pada 9 November 2026, lalu NPWP badan terdaftar di KPP Pratama Tasikmalaya pada 10 November 2026 — dasar yang kokoh untuk melayani pesanan sekolah, instansi, dan korporat dengan surat-menyurat resmi.",
   },
   {
     year: "Berikutnya",

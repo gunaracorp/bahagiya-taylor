@@ -10,7 +10,7 @@
 
 # BAHAGIYA TAYLOR GROUPS — WEBSITE
 
-**Menjahit Kualitas · Merajut Kepercayaan · Est. 2026**
+**Menjahit Kualitas · Merajut Kepercayaan · Est. 2015**
 
 Website resmi **Bahagiya Taylor Groups — Konveksi & Produsen Busana**,
 badan hukum Perseroan Perorangan yang disahkan Kementerian Hukum RI,
@@ -43,10 +43,10 @@ berkedudukan di Kabupaten Tasikmalaya, Jawa Barat.
 | **Pilar usaha** | Produksi Konveksi · Pesanan Khusus · Grosir & Distribusi · Penjualan Retail |
 | **Jam operasional** | Senin – Sabtu, 08.00 – 17.00 WIB |
 
-Perusahaan ini berdiri di Tasikmalaya dengan keyakinan sederhana: busana berkualitas
-tidak harus datang dari kota besar. Legalitas yang lengkap (badan hukum + NPWP badan)
-menjadikan Bahagiya Taylor Groups siap melayani pesanan sekolah, instansi, dan korporat
-dengan surat-menyurat resmi.
+Perusahaan ini berdiri sejak 2015 di Tasikmalaya dengan keyakinan sederhana: busana
+berkualitas tidak harus datang dari kota besar. Legalitas yang lengkap (badan hukum
++ NPWP badan, disahkan Kemenkumham RI pada November 2026) menjadikan Bahagiya Taylor
+Groups siap melayani pesanan sekolah, instansi, dan korporat dengan surat-menyurat resmi.
 
 ## ◆ Tentang Situs Ini
 
@@ -169,7 +169,7 @@ export const PHONE_DISPLAY   = "+62 821-2064-1493"; // sinkron dengan atas
 export const SITE = {
   name: "Bahagiya Taylor Groups",
   brandLine: "Konveksi & Produsen Busana",
-  estYear: 2026,
+  estYear: 2015,
   addressOneLine:
     "Kp. Cisodong RT 008 / RW 004, Cikalong, Kec. Cikalong, Kabupaten Tasikmalaya, Jawa Barat 46195",
   // ... alamat, peta, jam operasional

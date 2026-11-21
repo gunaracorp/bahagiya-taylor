@@ -12,7 +12,7 @@
  *  3. SIGNATURE PANEL digiman.id — logo SVG hexagon-orbit, wordmark gradasi
  *     berkilau, PT Digital Bisnis Manajemen, chip teknologi, tombol kunjungi,
  *     dan baris kredit "Support system" + "Design by muhdin.web.id".
- *  4. Bar kepercayaan (garansi, tepat waktu, harga produsen, est. 2026).
+ *  4. Bar kepercayaan (garansi, tepat waktu, harga produsen, est. 2015).
  *  5. Bar bawah: chip kredit Support system by digiman.id + Design by
  *     muhdin.web.id, hak cipta, tombol kembali ke atas.
  *
