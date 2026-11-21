@@ -162,10 +162,9 @@ bahagiya-taylor-groups/
 Seluruh identitas situs diatur di **`src/lib/site.ts`**:
 
 ```ts
-// ⚠️ WAJIB DIGANTI — dokumen legal perusahaan TIDAK memuat nomor telepon.
-// Isi nomor WhatsApp resmi Bahagiya Taylor Groups (angka saja, tanpa "+").
-export const WHATSAPP_NUMBER = "6281200000000";     // ← ganti di sini
-export const PHONE_DISPLAY   = "+62 812-0000-0000"; // ← sinkronkan tampilannya
+// Nomor WhatsApp resmi Bahagiya Taylor Groups (angka saja, tanpa "+").
+export const WHATSAPP_NUMBER = "6282120641493";     // nomor aktif
+export const PHONE_DISPLAY   = "+62 821-2064-1493"; // sinkron dengan atas
 
 export const SITE = {
   name: "Bahagiya Taylor Groups",

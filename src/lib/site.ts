@@ -9,14 +9,12 @@
 // ============================================================
 
 // Nomor WhatsApp resmi (format internasional tanpa "+")
-// ⚠️ WAJIB DIGANTI: dokumen legal perusahaan TIDAK memuat nomor
-// telepon/WA — isi nomor resmi Bahagiya Taylor Groups di sini.
 // Angka saja tanpa "+", contoh: 6281234567890
-export const WHATSAPP_NUMBER = "6281200000000";
+export const WHATSAPP_NUMBER = "6282120641493";
 
 // Tampilan nomor telepon dengan format mudah dibaca
 // ⚠️ Sinkronkan dengan WHATSAPP_NUMBER di atas.
-export const PHONE_DISPLAY = "+62 812-0000-0000";
+export const PHONE_DISPLAY = "+62 821-2064-1493";
 
 // TODO: Ganti dengan akun Instagram asli
 export const INSTAGRAM_HANDLE = "@bahagiyataylorgroups";
