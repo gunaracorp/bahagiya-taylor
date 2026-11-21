@@ -7,7 +7,7 @@ import { EASE_OUT } from "@/components/motion-primitives";
 const PHOTOS = [
   {
     src: "/images/workshop/ws-produksi.jpg",
-    alt: "Tim penjahit Mulya Konveksi bekerja di ruang produksi",
+    alt: "Tim penjahit Bahagiya Taylor Groups bekerja di ruang produksi",
     caption: "Ruang produksi — meja jahit berjalan",
     span: "md:col-span-2",
     ratio: "aspect-[16/10]",
@@ -83,8 +83,8 @@ export function WorkshopGallery({ compact = false }: { compact?: boolean }) {
         })}
       </div>
       <p className="mt-5 text-center text-xs text-ink-soft">
-        Dokumentasi asli workshop kami di Kp. Cibeureum, Tasikmalaya — bukan render atau stok
-        foto.
+        Dokumentasi asli workshop kami di Kp. Cisodong, Cikalong, Kabupaten Tasikmalaya — bukan
+        render atau stok foto.
       </p>
     </div>
   );

@@ -1,4 +1,4 @@
-// Generator aset visual tema terang — Mulya Konveksi (Ujang Juana Collection)
+// Generator aset visual tema terang — Bahagiya Taylor Groups
 // Semua gambar: bright, clean, studio cream, tanpa teks/logo.
 import ZAI from "z-ai-web-dev-sdk";
 import fs from "fs";

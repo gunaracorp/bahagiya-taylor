@@ -220,13 +220,13 @@ export function KontakView() {
           <SectionHeading
             eyebrow="Lokasi Kami"
             title="Mudah Ditemukan di"
-            highlight="Mangkubumi"
-            desc="Workshop kami berada di Jl. Karikil, Kp. Cibeureum, Kelurahan Cipari, Kecamatan Mangkubumi — dekat pusat Kota Tasikmalaya."
+            highlight="Cikalong"
+            desc="Workshop kami berada di Kp. Cisodong, Desa Cikalong, Kecamatan Cikalong, Kabupaten Tasikmalaya — mudah dijangkau dari arah kota Tasikmalaya."
           />
           <Reveal delay={0.15}>
             <div className="mt-12 overflow-hidden rounded-[2.5rem] border border-line bg-paper shadow-[0_16px_50px_rgba(28,42,34,0.12)]">
               <iframe
-                title="Peta lokasi workshop Mulya Konveksi di Mangkubumi, Tasikmalaya"
+                title="Peta lokasi workshop Bahagiya Taylor Groups di Cikalong, Kabupaten Tasikmalaya"
                 src={SITE.mapsEmbed}
                 className="h-[380px] w-full border-0 md:h-[440px]"
                 loading="lazy"

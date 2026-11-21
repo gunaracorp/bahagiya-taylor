@@ -44,7 +44,7 @@ function HeadlineWord({ text, gold, delay }: { text: string; gold?: boolean; del
   );
 }
 
-export function BerandaView({ base }: { base: number }) {
+export function BerandaView({ base = 0 }: { base?: number }) {
   // Paralaks mouse lembut untuk komposisi gambar
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
@@ -177,7 +177,7 @@ export function BerandaView({ base }: { base: number }) {
               <div className="stitch-frame relative aspect-[4/3] overflow-hidden rounded-[3rem] border border-line bg-paper shadow-[0_30px_80px_rgba(28,42,34,0.18)]">
                 <Image
                   src="/images/hero-workshop.png"
-                  alt="Ruang produksi konveksi Mulya Konveksi yang terang dengan deretan mesin jahit"
+                  alt="Ruang produksi konveksi Bahagiya Taylor Groups yang terang dengan deretan mesin jahit"
                   fill
                   priority
                   sizes="(max-width: 1024px) 92vw, 46vw"
@@ -185,9 +185,9 @@ export function BerandaView({ base }: { base: number }) {
                 />
               </div>
 
-              {/* Kartu melayang: Est 2020 */}
+              {/* Kartu melayang: Est 2026 */}
               <div className="animate-floaty absolute -left-4 top-8 rounded-2xl border border-line bg-paper px-5 py-3.5 shadow-[0_14px_36px_rgba(28,42,34,0.16)] md:-left-8">
-                <p className="font-display text-2xl font-bold text-emerald">2020</p>
+                <p className="font-display text-2xl font-bold text-emerald">2026</p>
                 <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-ink-soft">
                   Berdiri di Tasikmalaya
                 </p>

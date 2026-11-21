@@ -1,45 +1,52 @@
 // ============================================================
-//  DATA PUSAT — MULYA KONVEKSI · Ujang Juana Collection
+//  DATA PUSAT — BAHAGIYA TAYLOR GROUPS
 //  Konveksi, Pesanan Khusus, Grosir & Retail — Tasikmalaya
-//  Catatan: data perizinan/KBLI/keuangan sifatnya RAHASIA dan
+//  Identitas legal: Perseroan Perorangan BAHAGIYA TAYLOR GROUPS,
+//  disahkan Kemenkumham RI (SK AHU-A138368.AH.01.30.Tahun 2026,
+//  9 November 2026) — berkedudukan di Kab. Tasikmalaya.
+//  Catatan: data perizinan/NPWP/KBLI/keuangan sifatnya RAHASIA dan
 //  sengaja TIDAK dimuat di situs publik ini.
 // ============================================================
 
 // Nomor WhatsApp resmi (format internasional tanpa "+")
-export const WHATSAPP_NUMBER = "6281387685252";
+// ⚠️ WAJIB DIGANTI: dokumen legal perusahaan TIDAK memuat nomor
+// telepon/WA — isi nomor resmi Bahagiya Taylor Groups di sini.
+// Angka saja tanpa "+", contoh: 6281234567890
+export const WHATSAPP_NUMBER = "6281200000000";
 
 // Tampilan nomor telepon dengan format mudah dibaca
-export const PHONE_DISPLAY = "+62 813-8768-5252";
+// ⚠️ Sinkronkan dengan WHATSAPP_NUMBER di atas.
+export const PHONE_DISPLAY = "+62 812-0000-0000";
 
 // TODO: Ganti dengan akun Instagram asli
-export const INSTAGRAM_HANDLE = "@mulyakonveksi.tsm";
+export const INSTAGRAM_HANDLE = "@bahagiyataylorgroups";
 
 export const SITE = {
-  name: "Mulya Konveksi",
-  brandLine: "Ujang Juana Collection",
-  shortName: "Mulya Konveksi",
+  name: "Bahagiya Taylor Groups",
+  brandLine: "Konveksi & Produsen Busana",
+  shortName: "Bahagiya Taylor",
   tagline: "Menjahit Kualitas, Merajut Kepercayaan",
-  estYear: 2020,
-  moveYear: 2025,
+  estYear: 2026,
   type: "Konveksi & Produsen Busana",
   city: "Tasikmalaya",
   province: "Jawa Barat",
+  provinceShort: "Jawa Barat",
   address: {
-    street: "Jl. Karikil, Kp. Cibeureum RT 001/01",
-    urbanVillage: "Kelurahan Cipari",
-    district: "Kecamatan Mangkubumi",
-    cityFull: "Kota Tasikmalaya",
+    street: "Kp. Cisodong, RT 008 / RW 004",
+    urbanVillage: "Desa Cikalong",
+    district: "Kecamatan Cikalong",
+    cityFull: "Kabupaten Tasikmalaya",
     provinceShort: "Jawa Barat",
   },
   addressOneLine:
-    "Jl. Karikil, Kp. Cibeureum RT 001/01, Kel. Cipari, Kec. Mangkubumi, Kota Tasikmalaya, Jawa Barat",
+    "Kp. Cisodong RT 008 / RW 004, Cikalong, Kec. Cikalong, Kabupaten Tasikmalaya, Jawa Barat 46195",
   operationalHours: "Senin – Sabtu, 08.00 – 17.00 WIB",
   mapsQuery:
-    "Jl.%20Karikil%20Kp.%20Cibeureum%2C%20Cipari%2C%20Mangkubumi%2C%20Kota%20Tasikmalaya%2C%20Jawa%20Barat",
+    "Kp.%20Cisodong%2C%20Cikalong%2C%20Kabupaten%20Tasikmalaya%2C%20Jawa%20Barat",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Jl.%20Karikil%20Kp.%20Cibeureum%2C%20Cipari%2C%20Mangkubumi%2C%20Kota%20Tasikmalaya",
+    "https://www.google.com/maps/search/?api=1&query=Kp.%20Cisodong%2C%20Cikalong%2C%20Kabupaten%20Tasikmalaya%2C%20Jawa%20Barat",
   mapsEmbed:
-    "https://maps.google.com/maps?q=Jl.%20Karikil%20Kp.%20Cibeureum%2C%20Cipari%2C%20Mangkubumi%2C%20Kota%20Tasikmalaya&z=15&ie=UTF8&iwloc=&output=embed",
+    "https://maps.google.com/maps?q=Kp.%20Cisodong%2C%20Cikalong%2C%20Kabupaten%20Tasikmalaya%2C%20Jawa%20Barat&z=15&ie=UTF8&iwloc=&output=embed",
 } as const;
 
 export const waLink = (customMessage?: string) =>
@@ -48,14 +55,14 @@ export const waLink = (customMessage?: string) =>
   }`;
 
 export const DEFAULT_WA_MESSAGE =
-  "Assalamualaikum, saya ingin bertanya tentang layanan produksi di Mulya Konveksi (Ujang Juana Collection).";
+  "Assalamualaikum, saya ingin bertanya tentang layanan produksi di Bahagiya Taylor Groups.";
 
 // ---------- Statistik (angka faktual & aman) ----------
 export const STATS = [
-  { value: 2020, suffix: "", label: "Tahun Berdiri", plain: true },
-  { value: 4, suffix: "", label: "Pilar Usaha" },
-  { value: 9, suffix: "+", label: "Kategori Produk" },
-  { value: 5, suffix: "+", label: "Tahun Berkarya" },
+  { value: 2026, suffix: "", label: "Tahun Berdiri", plain: true },
+  { value: 4, suffix: "", label: "Pilar Usaha", plain: false },
+  { value: 9, suffix: "+", label: "Kategori Produk", plain: false },
+  { value: 18, suffix: "", label: "Bidang Usaha (KBLI)", plain: false },
 ] as const;
 
 // ---------- Pita berjalan ----------
@@ -278,19 +285,19 @@ export const VALUES = [
 // ---------- Linimasa ----------
 export const TIMELINE = [
   {
-    year: "2020",
-    title: "Awal Mula di Tasikmalaya",
-    desc: "Mulya Konveksi berdiri dengan keyakinan sederhana: busana berkualitas tidak harus datang dari kota besar. Dimulai dari ruang kerja sederhana dengan mesin terbatas.",
+    year: "2026",
+    title: "Lahir di Tasikmalaya",
+    desc: "BAHAGIYA TAYLOR GROUPS berdiri dengan keyakinan sederhana: busana berkualitas tidak harus datang dari kota besar. Pendirian disahkan oleh Kementerian Hukum RI sebagai badan hukum Perseroan Perorangan pada 9 November 2026.",
   },
   {
-    year: "2020–2024",
-    title: "Bertumbuh Bersama Pelanggan",
-    desc: "Satu pesanan demi satu pesanan, reputasi terbangun. Dipercaya sekolah, komunitas, brand owner, dan pelanggan retail — tim dan peralatan terus bertambah.",
+    year: "Nov 2026",
+    title: "Legalitas Lengkap",
+    desc: "NPWP badan terdaftar di KPP Pratama Tasikmalaya pada 10 November 2026 — dasar yang kokoh untuk melayani pesanan sekolah, instansi, dan korporat dengan surat-menyurat resmi.",
   },
   {
-    year: "2025",
-    title: "Babak Baru di Kp. Cibeureum",
-    desc: "Kami pindah ke fasilitas baru di Jl. Karikil, Kp. Cibeureum, Kel. Cipari, Kec. Mangkubumi — ruang produksi lebih luas, lebih terang, dengan alur kerja lebih rapi.",
+    year: "Berikutnya",
+    title: "Bertumbuh Bersama Anda",
+    desc: "Setiap pesanan adalah langkah tumbuh kami: memperluas kapasitas, menambah mesin, dan menghadirkan lebih banyak pilihan busana berkualitas untuk seluruh Indonesia.",
   },
   {
     year: "Hari Ini",

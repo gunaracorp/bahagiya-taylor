@@ -19,24 +19,24 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: `${SITE.name} ${SITE.brandLine} — Konveksi ${SITE.city} | Produksi, Kustom, Grosir & Retail`,
   description:
-    "Konveksi & produsen busana di Tasikmalaya, Jawa Barat sejak 2020. Produksi konveksi, pesanan khusus/kustom, grosir & distribusi, dan penjualan retail: seragam, kaos, polo, jersey, jaket, gamis, mukena, kebaya. Kualitas presisi, harga langsung produsen.",
+    "Konveksi & produsen busana di Kabupaten Tasikmalaya, Jawa Barat — badan hukum Perseroan Perorangan resmi Kemenkumham RI (2026). Produksi konveksi, pesanan khusus/kustom, grosir & distribusi, dan penjualan retail: seragam, kaos, polo, jersey, jaket, gamis, mukena, kebaya. Kualitas presisi, harga langsung produsen.",
   keywords: [
     "konveksi tasikmalaya",
-    "konveksi mangkubumi",
+    "konveksi cikalong",
     "produsen seragam tasikmalaya",
     "jahit seragam",
     "jersey custom tasikmalaya",
     "konveksi jawa barat",
     "grosir pakaian tasikmalaya",
     "kebaya custom",
-    "mulya konveksi",
-    "ujang juana collection",
+    "bahagiya taylor groups",
+    "bahagiya taylor",
   ],
   authors: [{ name: `${SITE.name} ${SITE.brandLine}` }],
   openGraph: {
     title: `${SITE.name} ${SITE.brandLine} — Konveksi ${SITE.city}`,
     description:
-      "Menjahit Kualitas, Merajut Kepercayaan. Produksi konveksi, pesanan khusus, grosir & retail sejak 2020 di Tasikmalaya.",
+      "Menjahit Kualitas, Merajut Kepercayaan. Produksi konveksi, pesanan khusus, grosir & retail — berbadan hukum Perseroan Perorangan resmi (2026) di Kabupaten Tasikmalaya.",
     siteName: `${SITE.name} ${SITE.brandLine}`,
     type: "website",
     locale: "id_ID",

@@ -43,7 +43,7 @@ export function TentangView() {
             >
               <Image
                 src="/images/about-hands-bright.png"
-                alt="Tangan penjahit Mulya Konveksi mengarahkan kain di bawah jarum mesin"
+                alt="Tangan penjahit Bahagiya Taylor Groups mengarahkan kain di bawah jarum mesin"
                 fill
                 sizes="(max-width: 1024px) 92vw, 46vw"
                 className="object-cover"
@@ -70,9 +70,9 @@ export function TentangView() {
 
             <Reveal delay={0.3} className="absolute -left-3 top-8 md:-left-8">
               <div className="animate-floaty rounded-2xl border border-line bg-paper px-5 py-4 shadow-[0_14px_36px_rgba(28,42,34,0.16)]">
-                <p className="font-display text-3xl font-bold text-emerald">2025</p>
+                <p className="font-display text-3xl font-bold text-emerald">2026</p>
                 <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-ink-soft">
-                  Fasilitas baru di Cibeureum
+                  Disahkan Kemenkumham RI
                 </p>
               </div>
             </Reveal>
@@ -92,18 +92,21 @@ export function TentangView() {
                 <p>
                   {SITE.name} — {SITE.brandLine} — lahir di {SITE.city} pada tahun{" "}
                   {SITE.estYear} dari keyakinan sederhana: busana berkualitas tidak harus datang
-                  dari kota besar. Dari ruang kerja yang sederhana, kami membangun reputasi satu
-                  pesanan demi satu pesanan — hingga dipercaya sekolah, komunitas, brand owner,
-                  dan pelanggan retail di sekitar Jawa Barat.
+                  dari kota besar. Pendirian kami disahkan oleh Kementerian Hukum RI sebagai
+                  badan hukum Perseroan Perorangan — reputasi kami bangun satu pesanan demi satu
+                  pesanan, untuk sekolah, komunitas, brand owner, dan pelanggan retail di
+                  sekitar Jawa Barat.
                 </p>
                 <p>
-                  Tahun {SITE.moveYear} menjadi babak baru: kami pindah ke fasilitas baru di{" "}
+                  Legalitas kami lengkap: NPWP badan terdaftar di KPP Pratama Tasikmalaya pada{" "}
+                  <span className="font-semibold text-ink">10 November 2026</span>. Dari workshop
+                  kami di{" "}
                   <span className="font-semibold text-ink">
-                    Jl. Karikil, Kp. Cibeureum, Kel. Cipari, Kec. Mangkubumi
+                    Kp. Cisodong, Desa Cikalong, Kec. Cikalong, Kabupaten Tasikmalaya
                   </span>{" "}
-                  — ruang produksi yang lebih luas, lebih terang, dan dirancang untuk standar
-                  kualitas yang lebih tinggi lagi. Mesin bertambah, alur kerja lebih rapi, dan
-                  semangatnya tetap sama seperti hari pertama.
+                  — ruang produksi yang terang dan rapi menjadi rumah bagi setiap pesanan. Mesin
+                  terus bertambah, alur kerja makin rapi, dan semangatnya tetap sama seperti
+                  hari pertama.
                 </p>
               </div>
             </Reveal>
@@ -127,7 +130,7 @@ export function TentangView() {
         <div className="mx-auto max-w-5xl px-5 md:px-8">
           <SectionHeading
             eyebrow="Jejak Perjalanan"
-            title="Dari 2020 Sampai"
+            title="Dari 2026 Sampai"
             highlight="Hari Ini"
             desc="Empat babak yang membentuk cara kami bekerja."
           />
@@ -259,7 +262,7 @@ export function TentangView() {
             eyebrow="Bukti Nyata"
             title="Dari Workshop Kami"
             highlight="Langsung"
-            desc="Potret asli keseharian produksi di Kp. Cibeureum — karena kepercayaan harus bisa dilihat."
+            desc="Potret asli keseharian produksi di workshop kami di Cikalong, Kabupaten Tasikmalaya — karena kepercayaan harus bisa dilihat."
           />
           <div className="mt-14">
             <WorkshopGallery />

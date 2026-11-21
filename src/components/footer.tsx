@@ -2,17 +2,17 @@
 
 /**
  * SIGNATURE FOOTER — adaptasi desain "The World-Class Signature Footer"
- * dari muhdin.web.id (by digiman.id) ke tema Mulya Konveksi.
+ * dari muhdin.web.id (by digiman.id) ke tema Bahagiya Taylor Groups.
  *
  * Lapisan:
  *  1. Hairline emas beranimasi (.footer-divider-flow) + aurora ambient +
- *     watermark raksasa "MULYA" outline emas di dasar footer.
+ *     watermark raksasa "BAHAGIYA" outline emas di dasar footer.
  *  2. 4 kolom: Brand / Jelajahi / Pilar Usaha / Kontak — heading berlian emas
  *     (ColHead) + link dengan garis emas merambat (FootLink).
  *  3. SIGNATURE PANEL digiman.id — logo SVG hexagon-orbit, wordmark gradasi
  *     berkilau, PT Digital Bisnis Manajemen, chip teknologi, tombol kunjungi,
  *     dan baris kredit "Support system" + "Design by muhdin.web.id".
- *  4. Bar kepercayaan (garansi, tepat waktu, harga produsen, est. 2020).
+ *  4. Bar kepercayaan (garansi, tepat waktu, harga produsen, est. 2026).
  *  5. Bar bawah: chip kredit Support system by digiman.id + Design by
  *     muhdin.web.id, hak cipta, tombol kembali ke atas.
  *
@@ -197,7 +197,7 @@ function SignaturePanel() {
               </div>
               <p className="mt-5 max-w-xl text-sm leading-relaxed text-ivory/60">
                 Infrastruktur sistem, pengelolaan konten, dan dukungan teknis yang menopang situs
-                Mulya Konveksi — Ujang Juana Collection.
+                Bahagiya Taylor Groups.
               </p>
               <div className="mt-5 flex flex-wrap items-center gap-2">
                 <span className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-gold-2">
@@ -287,7 +287,7 @@ export function Footer() {
         aria-hidden="true"
         className="footer-watermark pointer-events-none absolute inset-x-0 bottom-0 z-0 translate-y-[22%] text-center font-black leading-[0.78] tracking-tight text-[clamp(5.5rem,19vw,15rem)]"
       >
-        MULYA
+        BAHAGIYA
       </div>
       <div
         aria-hidden="true"
@@ -307,10 +307,10 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <LogoMark size={52} />
                 <span className="font-display text-lg leading-tight font-bold text-ivory">
-                  Mulya Konveksi
+                  Bahagiya Taylor Groups
                   <br />
                   <span className="text-sm font-semibold tracking-[0.18em] text-gold-2">
-                    UJANG JUANA COLLECTION
+                    KONVEKSI &amp; PRODUSEN BUSANA
                   </span>
                 </span>
               </div>
@@ -326,13 +326,13 @@ export function Footer() {
                   href={waLink(DEFAULT_WA_MESSAGE)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="WhatsApp Mulya Konveksi"
+                  aria-label="WhatsApp Bahagiya Taylor Groups"
                   className="grid h-10 w-10 place-items-center rounded-xl border border-ivory/10 bg-white/5 text-ivory/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-gold/50 hover:bg-gold/15 hover:text-gold-2 hover:shadow-[0_8px_20px_-6px_rgba(201,150,43,0.4)]"
                 >
                   <WaIcon className="h-4.5 w-4.5" />
                 </a>
                 <span
-                  title="Instagram Mulya Konveksi"
+                  title="Instagram Bahagiya Taylor Groups"
                   className="grid h-10 w-10 cursor-default place-items-center rounded-xl border border-ivory/10 bg-white/5 text-ivory/70"
                 >
                   <svg viewBox="0 0 24 24" className="h-4.5 w-4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">

@@ -99,7 +99,7 @@ export function ProdukView() {
               Ingin melihat sampel fisik atau katalog lengkap dengan pilihan bahan?{" "}
               <WaButton
                 href={waLink(
-                  "Assalamualaikum, saya ingin melihat katalog lengkap produk Mulya Konveksi.",
+                  "Assalamualaikum, saya ingin melihat katalog lengkap produk Bahagiya Taylor Groups.",
                 )}
                 className="ml-2 !px-6 !py-2.5 text-sm"
               >
@@ -117,7 +117,7 @@ export function ProdukView() {
             eyebrow="Di Balik Setiap Potong"
             title="Langsung dari"
             highlight="Workshop Kami"
-            desc="Semua produk di atas dijahit di workshop kami sendiri di Kp. Cibeureum — berikut potret aslinya."
+            desc="Semua produk di atas dijahit di workshop kami sendiri di Kp. Cisodong, Cikalong — berikut potret aslinya."
           />
           <div className="mt-14">
             <WorkshopGallery compact />

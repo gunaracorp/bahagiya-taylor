@@ -50,7 +50,7 @@ export const PAGE_TITLES: Record<PageId, { eyebrow: string; title: string; desc:
   tentang: {
     eyebrow: "Profil Perusahaan",
     title: "Tentang Kami",
-    desc: "Perjalanan Mulya Konveksi — dari ruang kerja sederhana di Tasikmalaya tahun 2020 hingga fasilitas baru di Kp. Cibeureum.",
+    desc: "Perjalanan Bahagiya Taylor Groups — konveksi berbadan hukum Perseroan Perorangan, disahkan Kementerian Hukum RI pada 2026 dan berkedudukan di Kabupaten Tasikmalaya.",
   },
   layanan: {
     eyebrow: "Apa yang Kami Kerjakan",
